@@ -1,12 +1,11 @@
-<div class="container">
+<div class="container" id="header1">
   <div class="row">
-    <p><%=@idea.text%></p>
+    <h1 class="text"><%=@idea.text%></h1>
+    <a class="links-top" href="/idea_notebook/<%=@idea.id%>/edit">Edit</a> <span class="links">|</span>
+    <a class="links-top" href="/idea_notebook/<%=@idea.id%>/destroy">Destroy</a>
   </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <a href="/idea_notebook/<%=@idea.id%>/edit">edit</a> |
-    <a href="/idea_notebook/<%=@idea.id%>/destroy">delete</a>
+  <div class="row" id="row2">
+    <a class="links-bottom" href="/idea_notebook/">Back to list of ideas</a> |
+    <a class="links-bottom" href="/idea_notebook/new">Create a new idea</a>
   </div>
 </div>

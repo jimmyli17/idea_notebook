@@ -1,17 +1,16 @@
 <div class="container">
   <div class="row">
+    <div class="col-md-2 col-md-offset2"></div>
     <div class="col-md-8 col-md-offset2">
-      <h1>Complete List Of Ideas:</h1>
-      <ul>
-        <% @ideas.each do |idea|%>
-        <li> 
-          <%=idea.text%>
-        </li>
-        <a href="/idea_notebook/<%=idea.id%>">show</a> |
-        <a href="/idea_notebook/<%=idea.id%>/edit">edit</a> |
-        <a href="/idea_notebook/<%=idea.id%>/destroy">delete</a>
-        <% end %>
-      </ul>
+      <h1>Your list of ideas</h1>
+      <a href="/idea_notebook/new">Create a new idea</a><br>
+      <div class="btn-group-vertical" role="group" aria-label="...">
+        <div id="link-buttons" class="btn-group-vertical" role="group">
+          <% @ideas.each do |idea|%>
+          <a href="/idea_notebook/<%=idea.id%>" class="btn btn-default btn-lg" role="button"><%=idea.text%></a>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
