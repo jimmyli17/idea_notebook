@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset2">
+      <h1>Complete List Of Ideas:</h1>
+      <ul>
+        <% @ideas.each do |idea|%>
+        <li> 
+          <%=idea.text%>
+        </li>
+        <a href="/idea_notebook/<%=idea.id%>">show</a> |
+        <a href="/idea_notebook/<%=idea.id%>/edit">edit</a> |
+        <a href="/idea_notebook/<%=idea.id%>/destroy">delete</a>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

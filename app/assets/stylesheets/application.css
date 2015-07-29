@@ -1,0 +1,15 @@
+.edit-scientist
+{
+  margin: 20px -40px
+}
+.form-control
+{
+  height: 500px;
+  width: 1150px !important;
+  margin: 0px -30px
+}
+.form-control-submit
+{
+  margin-left: 110px;
+  margin-top: 20px;
+}
